@@ -4,175 +4,491 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
 
 </head>
 <body>
-    <main>
+    <!-- <div class="bar-btn">
         
-        <div id="sidebar">
-            <div class="search-parent-side">
-                <input class="search-bar-side" type="search" placeholder="جستوجو...">
-                <!-- <label class="placeholder">جستوجو...</label> -->
-                <input class="search-submit-side" type="submit" value="">
-                <i class="fa-solid fa-magnifying-glass"></i>
-              </div>
-            <div class="side-item">
-                <p>خانه</p>
+    </div> -->
+    <div id="sidebar">
+        <div class="search-parent-side">
+            <input class="search-bar-side" type="search" placeholder="جستوجو...">
+            <!-- <label class="placeholder">جستوجو...</label> -->
+            <input class="search-submit-side" type="submit" value="">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </div>
+        <div class="side-item">
+            <p>خانه</p>
+        </div>
+        <div class="side-item side-sup">
+            <p>خرید مکمل</p>
+            <i class="fa-solid fa-angle-down item-text"></i>
+        </div>
+        <div class="side-sup-menu">
+            <div class="side-sup-item">
+                <p>پرفروش ها</p>
             </div>
-            <div class="side-item side-sup">
-                <p>خرید مکمل</p>
-                <i class="fa-solid fa-angle-down item-text"></i>
+            <div class="side-sup-item">
+                <p>جدید ها</p>
             </div>
-            <div class="side-sup-menu">
-                <div class="side-sup-item">
-                    <p>پرفروش ها</p>
-                </div>
-                <div class="side-sup-item">
-                    <p>جدید ها</p>
-                </div>
-                <div class="drop-line"></div>
-                <div class="side-sup-item">
-                    <p>دیدن همه</p>
-                </div>
-            </div>
-            <div class="side-item">
-                <p>ارائه برنامه</p>
-            </div>
-            <div class="side-item side-belt">
-                <p>لوازم ورزشی</p>
-                <i class="fa-solid fa-angle-down item-text"></i>
-            </div>
-            <div class="side-belt-menu">
-                <div class="side-belt-item">
-                    <p>کمربند</p>
-                </div>
-                <div class="side-belt-item">
-                    <p>زانو بند</p>
-                </div>
-                <div class="side-belt-item">
-                    <p>مچ بند</p>
-                </div>
-                <div class="side-belt-item">
-                    <p>بند لیفت</p>
-                </div>
-                <div class="drop-line"></div>
-                <div class="side-belt-item">
-                    <p>دیدن همه</p>
-                </div>
-            </div>
-            <div class="side-item side-layout">
-                <p>طرح بندی</p>
-                <i class="fa-solid fa-angle-down item-text"></i>
-            </div>
-            <div class="side-layout-menu">
-                <div class="side-layout-item">
-                    <button class="layout-btn" id="vertical">عمودی</button>
-                    <button class="layout-btn" id="horizontal">افقی</button>
-                </div>
-            </div>
-            <div class="side-item">
-                <p>درباره ما</p>
+            <div class="drop-line"></div>
+            <div class="side-sup-item">
+                <p>دیدن همه</p>
             </div>
         </div>
-        <nav>
-            <div class="nav-right">
-                <div class="bar-parent">
-                    <i class=" bar fa-solid fa-bars"></i>
-                    <i class="close fa-solid fa-xmark"></i>
-                  </div>
-                  <div class="iran">
-                    <img src="img/iran.png" alt="">
-                  </div>
-                <div class="checkbox-wrapper-54" >
-                    <label class="switch">
-                      <input type="checkbox" id="checkbox">
-                      <span class="slider"></span>
-                    </label>
-                  </div>
-                  
-                  <div class="search-parent">
-                    <input class="search-bar" type="search" placeholder="جستوجو...">
-                    <!-- <label class="placeholder">جستوجو...</label> -->
-                    <input class="search-submit" type="submit" value="">
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                  </div>
+        <div class="side-item">
+            <p>ارائه برنامه</p>
+        </div>
+        <!-- <div class="side-item side-belt">
+            <p>لوازم ورزشی</p>
+            <i class="fa-solid fa-angle-down item-text"></i>
+        </div>
+        <div class="side-belt-menu">
+            <div class="side-belt-item">
+                <p>کمربند</p>
             </div>
-            <div class="nav-left">
-                
-                <div class="items ">
-                    <div class="item">
-                        <p class="item-text">درباره ما</p>
+            <div class="side-belt-item">
+                <p>زانو بند</p>
+            </div>
+            <div class="side-belt-item">
+                <p>مچ بند</p>
+            </div>
+            <div class="side-belt-item">
+                <p>بند لیفت</p>
+            </div>
+            <div class="drop-line"></div>
+            <div class="side-belt-item">
+                <p>دیدن همه</p>
+            </div>
+        </div> -->
+        <div class="side-item side-layout">
+            <p>طرح بندی</p>
+            <i class="fa-solid fa-angle-down item-text"></i>
+        </div>
+        <div class="side-layout-menu">
+            <div class="side-layout-item">
+                <button class="side-layout-btn" id="side-vertical">عمودی</button>
+                <button class="side-layout-btn" id="side-horizontal">افقی</button>
+            </div>
+        </div>
+        <div class="side-item">
+            <p>درباره ما</p>
+        </div>
+    </div>
+    <div class="bar-parent">
+        <i class="  bar fa-solid fa-bars"></i>
+        <i class=" close fa-solid fa-xmark"></i>
+        
+        
+      </div>
+    <div class="login">
+        <button id="login-btnn" class="button-77" role="button">ورود &nbsp;<i class="fa-solid fa-right-to-bracket"></i></button>
+        <section class="login-container">
+            <div class="login-parent">
+                <div class="login-top">
+                    <div class="login-close">
+                        <button id="close-login">&times;</button>
                     </div>
-                    <div class="item layout">
-                        <p class="item-text">طرح بندی</p>
-                        <i class="fa-solid fa-angle-down item-text"></i>
+                    <div class="login-text">
+                        <h3>ورود</h3>
+                        <p>برای دسترسی به حساب کاربری خود، نام کاربری و رمز عبور خود را وارد کنید .</p>
                     </div>
-                    <div class="layout-menu">
-                        <div class="layout-item">
-                            <button class="layout-btn" id="vertical">عمودی</button>
-                            <button class="layout-btn" id="horizontal">افقی</button>
-                        </div>
-
+                    <div class="username">
+                        <label for="username">نام کاربری</label>
+                        <input type="text" name="username" id="username" />
                     </div>
-                    <div class="item belt">
-                        <p class="item-text">لوازم ورزشی</p>
-                        <i class="fa-solid fa-angle-down item-text"></i>
+                    <div class="password">
+                        <img
+                             id="hide-pass"
+                             src="img/show.png" 
+                             alt="">
+                        <label for="password" id="visible">
+                            <span>رمز عبور</span>
+                            
+                        </label>
+                        <input type="password" name="password" id="password">
                     </div>
-                    <div class="belt-menu">
-                        <div class="belt-item">
-                            <p>کمربند</p>
+                    <div class="forgot">
+                        <div class="login-check">
+                            <p>به خاطر بسپار</p>
+                            <div class="checkbox-wrapper-19">
+                                <input type="checkbox" id="cbtest-19" />
+                                <label for="cbtest-19" class="check-box">
+                              </div>
                         </div>
-                        <div class="belt-item">
-                            <p>مچ بند</p>
-                        </div>
-                        <div class="belt-item">
-                            <p>زانو بند</p>
-                        </div>
-                        <div class="belt-item">
-                            <p>بند لیفت</p>
-                        </div>
-                        <div class="drop-line"></div>
-                        <div class="belt-item">
-                            <p>دیدن همه</p>
-                        </div>
+                        <p class="forgot-text">فراموشی رمز عبور</p>
                     </div>
-                    <div class="item">
-                        <p class="item-text">ارائه برنامه</p>
-                    </div>
-                    <div class="item sup" >
-                        <p class="item-text">خرید مکمل</p>
-                        <i class="fa-solid fa-angle-down item-text"></i>
-                    </div>
-                    <div class="sup-menu">
-                        <div class="sup-item">
-                            <p>پرفروش ها</p>
-                        </div>
-                        <div class="sup-item">
-                            <p>جدید ها</p>
-                        </div>
-                        <div class="drop-line"></div>
-                        <div class="sup-item">
-                            <p>دیدن همه</p>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <p class="item-text">خانه</p>
-                    </div>
+                    <div><button type="submit" id="login-button">ورود</button></div>
                 </div>
-                <div class="logo">
-                    <img src="img/Gym-6.png" alt="">
+                <div class="login-bottom">
+                    <p>ورود با اکانت های فضای مجازی</p>
+                    <div class="socials-parent">
+                        <button class="social-icon" style="font-size: 20px;"><i class="fa-brands fa-instagram"></i></button>
+                        <button class="social-icon"><i class="fa-brands fa-google"></i></button>
+                        <button class="social-icon"><i class="fa-brands fa-twitter"></i></button>
+                    </div>
                 </div>
             </div>
             
+        </section>
+    </div>
+    <div class="iran">
+        <i id="cart" class="fa-solid fa-cart-shopping"></i>
+        <section class="cart-container" >
+            <div class="cart-parent">
+                <div class="cart-close">
+                    <button class="cart-close-btn">&times;</button>
+                </div>
+                <div class="cart-title">
+                    <h3>سبد خرید شما:</h3>
+                    <p>username : bardia</p>
+                </div>
+                <div class="cart-items-container">
+                    <div class="cart-card">
+                        <img src="img/whey-1.png" alt="">
+                        <div class="card-text">
+                            <p>پروتئین وی برند ALLMAX</p>
+                            <p>5.750.000 تومان</p>
+                        </div>
+                        <button class="cart-remove">حذف</button>
+                    </div>
+                    <div class="cart-card">
+                        <img src="img/gainer.png" alt="">
+                        <div class="card-text">
+                            <p>گینر برند Muscletech</p>
+                            <p>4.290.000 تومان</p>
+                        </div>
+                        <button class="cart-remove">حذف</button>
+                    </div>
+                    <div class="cart-card">
+                        <img src="img/pump.png" alt="">
+                        <div class="card-text">
+                            <p>پمپ applied pre workout</p>
+                            <p>2.120.000 تومان</p>
+                        </div>
+                        <button class="cart-remove">حذف</button>
+                    </div>
+                </div>
+                <div class="cart-buy">
+                    <p>مجموعا 3 کالا به ارزش 18.000.000 میلیون</p>
+                    <button class="cart-btn">ادامه پرداخت</button>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    
+    
+    <main class="main">
+        
+        
+        <nav class="nav">
+            <div class="inner-nav">
+                <div class="nav-right">
+                    
+                      
+                      
+                    <div class="checkbox-wrapper-54">
+                        <label class="switch">
+                          <input type="checkbox" id="checkbox">
+                          <span class="slider"></span>
+                        </label>
+                      </div>
+                      
+                      <div class="search-parent">
+                        <input class="search-bar" type="search" placeholder="جستوجو...">
+                        <!-- <label class="placeholder">جستوجو...</label> -->
+                        <input class="search-submit" type="submit" value="">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                      </div>
+                </div>
+                <div class="nav-left">
+                    
+                    <div class="items ">
+                        <div class="item">
+                            <p class="item-text">درباره ما</p>
+                        </div>
+                        <div class="item layout">
+                            <p class="item-text">طرح بندی</p>
+                            <i class="fa-solid fa-angle-down item-text"></i>
+                        </div>
+                        <div class="layout-menu">
+                            <div class="layout-item">
+                                <button class="layout-btn" id="vertical">عمودی</button>
+                                <button class="layout-btn" id="horizontal">افقی</button>
+                            </div>
+                        </div>
+                        <!-- <div class="item belt">
+                            <p class="item-text">لوازم ورزشی</p>
+                            <i class="fa-solid fa-angle-down item-text"></i>
+                        </div> -->
+                        <!-- <div class="belt-menu">
+                            <div class="belt-item">
+                                <p>کمربند</p>
+                            </div>
+                            <div class="belt-item">
+                                <p>مچ بند</p>
+                            </div>
+                            <div class="belt-item">
+                                <p>زانو بند</p>
+                            </div>
+                            <div class="belt-item">
+                                <p>بند لیفت</p>
+                            </div>
+                            <div class="drop-line"></div>
+                            <div class="belt-item">
+                                <p>دیدن همه</p>
+                            </div>
+                        </div> -->
+                        <div class="item">
+                            <p class="item-text">ارائه برنامه</p>
+                        </div>
+                        <div class="item sup" >
+                            <p class="item-text">خرید مکمل</p>
+                            <i class="fa-solid fa-angle-down item-text"></i>
+                        </div>
+                        <div class="sup-menu">
+                            <div class="sup-item">
+                                <p>پرفروش ها</p>
+                            </div>
+                            <div class="sup-item">
+                                <p>جدید ها</p>
+                            </div>
+                            <div class="drop-line"></div>
+                            <div class="sup-item">
+                                <p>دیدن همه</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <p class="item-text">خانه</p>
+                        </div>
+                    </div>
+                    <div class="logo">
+                        <img src="img/Gym-6.png" alt="">
+                    </div>
+                </div>
+            </div>
+            
+            
         </nav>
-        <!-- <div class="box"></div> -->
-        <!-- <div class="side-shadow"></div> -->
+        <div class="body-main">
+            <!-- <div class="home-parent">
+                <div class="home-right">
+                    <h1 style="margin-bottom: 15px;">تغییر را با ما شروع کن!</h1>
+                    <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطر</p>
+                    <button class="home-btn">مشاوره رایگان</button>
+                </div>
+                <div class="home-left">
+                    <img src="img/transparent-workout-dumbbells-dumbbell-weightlifting-gym-64d5cb4c421b61.8935964616917328122708.png" alt="">
+                </div>
+                
+            </div> -->
+            <section class="containerr" data-aos="fade-left">
+                <div class="card-container swiper">
+                  <div class="card-content">
+                    <div class="swiper-wrapper">
+                      <!-- Article -->
+                      <article class="card-article swiper-slide">
+                        <div class="card-image">
+                          <img
+                            src="img/pump.png"
+                            alt="image"
+                            class="card-img"
+                          />
+                          <div class="card-shadow"></div>
+                        </div>
+                        <div id="card-1" class="card-bottom">
+                            <h5>گینر برند BSN-true mass</h5>
+                            <p>وزن :4.65 کیلوگرم <br>طمع :توت فرنگی</p>
+                        </div>
+                        
+                      </article>
+          
+                      <!-- Article -->
+                      <article class="card-article swiper-slide">
+                        <div class="card-image">
+                          <img
+                            src="img/gainer.png"
+                            alt="image"
+                            class="card-img"
+                          />
+                          <div class="card-shadow"></div>
+                        </div>
+                        <div id="card-2" class="card-bottom">
+                            <h5>گینر برند BSN-true mass</h5>
+                            <p>وزن :4.65 کیلوگرم <br>طمع :توت فرنگی</p>
+                        </div>
+                      </article>
+          
+                      <!-- Article -->
+                      <article class="card-article swiper-slide">
+                        <div class="card-image">
+                          <img
+                            src="img/whey-2.png"
+                            alt="image"
+                            class="card-img"
+                          />
+                          <div class="card-shadow"></div>
+                        </div>
+                        <div id="card-3" class="card-bottom">
+                            <h5>گینر برند BSN-true mass</h5>
+                            <p>وزن :4.65 کیلوگرم <br>طمع :توت فرنگی</p>
+                        </div>
+                      </article>
+          
+                      <!-- Article -->
+                      <article class="card-article swiper-slide">
+                        <div class="card-image">
+                          <img
+                            src="img/amino.png"
+                            alt="image"
+                            class="card-img"
+                          />
+                          <div class="card-shadow"></div>
+                        </div>
+                        <div id="card-4" class="card-bottom">
+                            <h5>گینر برند BSN-true mass</h5>
+                            <p>وزن :4.65 کیلوگرم <br>طمع :توت فرنگی</p>
+                        </div>
+                      </article>
+          
+                      <!-- Article -->
+                      <article class="card-article swiper-slide">
+                        <div class="card-image">
+                          <img
+                            src="img/cr-1 (3).png"
+                            alt="image"
+                            class="card-img"
+                          />
+                          <div class="card-shadow"></div>
+                        </div>
+                        <div id="card-5" class="card-bottom">
+                            <h5>گینر برند BSN-true mass</h5>
+                            <p>وزن :4.65 کیلوگرم <br>طمع :توت فرنگی</p>
+                        </div>
+                      </article>
+                    </div>
+                  </div>
+          
+                  <!-- Navigation Buttons -->
+                  <div class="swiper-button-next">
+                    <i class="fa-solid fa-chevron-right"></i>
+                  </div>
+          
+                  <div class="swiper-button-prev">
+                    <i class="fa-solid fa-chevron-left"></i>
+                  </div>
+          
+                  <!-- Pagination -->
+                  <div class="swiper-pagination"></div>
+                </div>
+              </section>
+            <div class="sup-parent">
+                <h1 data-aos="fade-right">مکمل های پرفروش </h1>
+                <div class="sup-card-parent">
+                    <div class="sup-card" data-aos="fade-right" data-aos-delay="100">
+                        <div class="sup-img">
+                            <img src="img/whey-3.png" alt="">
+                        </div>
+                        <div class="sup-detail">
+                            <div class="detail-parent">
+                                <h5>پروتین وی برند اپلاید</h5>
+                                <p class="weight">وزن :1.87 کیلوگرم <br>طمع : شیک توت فرنگی</p>
+                                <div class="price">
+                                    <button class="button-48" role="button"><span class="text"><p>افزودن به سبد خرید</p> <i class="fa-solid fa-cart-shopping"></i></span></button>
+                                    <!-- <button class="card-button">افزودن به سبد خرید <i class="fa-solid fa-cart-shopping"></i></button> -->
+                                    <p>قیمت : 4.700.000 تومان</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="sup-card" data-aos="fade-right" 
+                    data-aos-delay="200">
+                        <div class="sup-img">
+                            <img src="img/whey-3.png" alt="">
+                        </div>
+                        <div class="sup-detail">
+                            <div class="detail-parent">
+                                <h5>پروتین وی برند اپلاید</h5>
+                                <p class="weight">وزن :1.87 کیلوگرم <br>طمع : شیک توت فرنگی</p>
+                                <div class="price">
+                                    <button class="button-48" role="button"><span class="text"><p>افزودن به سبد خرید</p> <i class="fa-solid fa-cart-shopping"></i></span></button>
+                                    <!-- <button class="card-button">افزودن به سبد خرید <i class="fa-solid fa-cart-shopping"></i></button> -->
+                                    <p>قیمت : 4.700.000 تومان</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="sup-card" data-aos="fade-right" data-aos-delay="300">
+                        <div class="sup-img">
+                            <img src="img/whey-3.png" alt="">
+                        </div>
+                        <div class="sup-detail">
+                            <div class="detail-parent">
+                                <h5>پروتین وی برند اپلاید</h5>
+                                <p class="weight">وزن :1.87 کیلوگرم <br>طمع : شیک توت فرنگی</p>
+                                <div class="price">
+                                    <button class="button-48" role="button"><span class="text"><p>افزودن به سبد خرید</p> <i class="fa-solid fa-cart-shopping"></i></span></button>
+                                    <!-- <button class="card-button">افزودن به سبد خرید <i class="fa-solid fa-cart-shopping"></i></button> -->
+                                    <p>قیمت : 4.700.000 تومان</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="sup-card" data-aos="fade-right" data-aos-delay="400">
+                        <div class="sup-img">
+                            <img src="img/whey-3.png" alt="">
+                        </div>
+                        <div class="sup-detail">
+                            <div class="detail-parent">
+                                <h5>پروتین وی برند اپلاید</h5>
+                                <p class="weight">وزن :1.87 کیلوگرم <br>طمع : شیک توت فرنگی</p>
+                                <div class="price">
+                                    <button class="button-48" role="button"><span class="text"><p>افزودن به سبد خرید</p> <i class="fa-solid fa-cart-shopping"></i></span></button>
+                                    <!-- <button class="card-button">افزودن به سبد خرید <i class="fa-solid fa-cart-shopping"></i></button> -->
+                                    <p>قیمت : 4.700.000 تومان</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="sup-card" data-aos="fade-right" data-aos-delay="500">
+                        <div class="sup-img">
+                            <img src="img/whey-3.png" alt="">
+                        </div>
+                        <div class="sup-detail">
+                            <div class="detail-parent">
+                                <h5>پروتین وی برند اپلاید</h5>
+                                <p class="weight">وزن :1.87 کیلوگرم <br>طمع : شیک توت فرنگی</p>
+                                <div class="price">
+                                    <button class="button-48" role="button"><span class="text"><p>افزودن به سبد خرید</p> <i class="fa-solid fa-cart-shopping"></i></span></button>
+                                    <!-- <button class="card-button">افزودن به سبد خرید <i class="fa-solid fa-cart-shopping"></i></button> -->
+                                    <p>قیمت : 4.700.000 تومان</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                     
+            </div>
+                
+        </div>
+        
     </main>
 
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
     <script src="script.js"></script>
 </body>
 </html>
