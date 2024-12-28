@@ -11,9 +11,9 @@ checkbox.addEventListener('change',()=>{
         document.querySelector('#sidebar').style.background="#212529";
         // document.querySelector('.belt-menu').style.background="#212529";
         document.querySelector('.sup-menu').style.background="#212529";
-        document.querySelector('.side-sup-menu').style.background="#212529";
+        document.querySelector('.side-nav-sup-menu').style.background="#212529";
         document.querySelector('.layout-menu').style.background="#212529";
-        document.querySelector('.side-layout-menu').style.background="#212529";
+        document.querySelector('.side-nav-layout-menu').style.background="#212529";
         document.querySelector('.nav').style.background="#212529";
         document.querySelector('.login-container').style.background="#212529";
         document.querySelector('.cart-container').style.background="#212529";
@@ -22,6 +22,7 @@ checkbox.addEventListener('change',()=>{
         document.querySelector('#card-3').style.background="#212529";
         document.querySelector('#card-4').style.background="#212529";
         document.querySelector('#card-5').style.background="#212529";
+        sidecheckbox.checked=true;
         // document.querySelector('.card-bottom').classList.add('active');
         document.querySelector('.card-button').style.background="#212529";
         // document.documentElement.style.setProperty('--orange-color', '#ff0000');
@@ -32,9 +33,9 @@ checkbox.addEventListener('change',()=>{
         document.querySelector('#sidebar').style.background="#fff";
         // document.querySelector('.belt-menu').style.background="#fff";
         document.querySelector('.sup-menu').style.background="#fff";
-        document.querySelector('.side-sup-menu').style.background="#fff";
+        document.querySelector('.side-nav-sup-menu').style.background="#fff";
         document.querySelector('.layout-menu').style.background="#fff";
-        document.querySelector('.side-layout-menu').style.background="#fff";
+        document.querySelector('.side-nav-layout-menu').style.background="#212529";
         document.querySelector('.nav').style.background="#fff";
         document.querySelector('.login-container').style.background="#fff";
         document.querySelector('.cart-container').style.background="#fff";
@@ -43,6 +44,7 @@ checkbox.addEventListener('change',()=>{
         document.querySelector('#card-3').style.background="#fff";
         document.querySelector('#card-4').style.background="#fff";
         document.querySelector('#card-5').style.background="#fff";
+        sidecheckbox.checked=false;
         // document.querySelector('.card-bottom').classList.remove('active');
         document.querySelector('.card-button').style.background="#fff";
     }
@@ -55,7 +57,7 @@ sidecheckbox.addEventListener('change',()=>{
         document.querySelector('.sup-menu').style.background="#212529";
         document.querySelector('.side-sup-menu').style.background="#212529";
         document.querySelector('.layout-menu').style.background="#212529";
-        document.querySelector('.side-layout-menu').style.background="#212529";
+        document.querySelector('.side-nav-layout-menu').style.background="#212529";
         document.querySelector('.nav').style.background="#212529";
         document.querySelector('.login-container').style.background="#212529";
         document.querySelector('.cart-container').style.background="#212529";
@@ -76,7 +78,7 @@ sidecheckbox.addEventListener('change',()=>{
         document.querySelector('.sup-menu').style.background="#fff";
         document.querySelector('.side-sup-menu').style.background="#fff";
         document.querySelector('.layout-menu').style.background="#fff";
-        document.querySelector('.side-layout-menu').style.background="#fff";
+        document.querySelector('.side-nav-layout-menu').style.background="#fff";
         document.querySelector('.nav').style.background="#fff";
         document.querySelector('.login-container').style.background="#fff";
         document.querySelector('.cart-container').style.background="#fff";
@@ -160,12 +162,12 @@ document.querySelector('#side-vertical').addEventListener('click',()=>{
     document.querySelector('.login').classList.remove('side');
 });
 document.querySelector('#side-nav-lay').addEventListener('click',()=>{
-    document.querySelector('.side-layout-menu').classList.toggle('active');
-    document.querySelector('.side-sup-menu').classList.remove('active');
+    document.querySelector('.side-nav-layout-menu').classList.toggle('active');
+    document.querySelector('.side-nav-sup-menu').classList.remove('active');
 });
 document.querySelector('#side-nav-sup').addEventListener('click',()=>{
-    document.querySelector('.side-sup-menu').classList.toggle('active');
-    document.querySelector('.side-layout-menu').classList.remove('active');
+    document.querySelector('.side-nav-sup-menu').classList.toggle('active');
+    document.querySelector('.side-nav-layout-menu').classList.remove('active');
 });
 document.querySelector('.bar-parent').addEventListener('click',()=>{
     document.querySelector('#sidebar').classList.toggle('active');
@@ -191,16 +193,16 @@ document.addEventListener('click',(e)=>{
         // document.querySelector('.side-shadow').classList.remove('active');
     };
 });
-document.querySelector('#side-horizontal').addEventListener('click',()=>{
-    document.querySelector('#side-horizontal').style.background="#ff7424e2";
+document.querySelector('#sidebar-horizontal').addEventListener('click',()=>{
+    document.querySelector('#sidebar-horizontal').style.background="#ff7424e2";
     // document.querySelector('#horizontal').style.color="#fff";
-    document.querySelector('#side-vertical').style.background="transparent";
+    document.querySelector('#sidebar-vertical').style.background="transparent";
     // document.querySelector('#vertical').style.color="#000";
 });
-document.querySelector('#side-vertical').addEventListener('click',()=>{
-    document.querySelector('#side-vertical').style.background="#ff7424e2";
+document.querySelector('#sidebar-vertical').addEventListener('click',()=>{
+    document.querySelector('#sidebar-vertical').style.background="#ff7424e2";
     // document.querySelector('#horizontal').style.color="#fff";
-    document.querySelector('#side-horizontal').style.background="transparent";
+    document.querySelector('#sidebar-horizontal').style.background="transparent";
     // document.querySelector('#vertical').style.color="#000";
 });
 document.querySelector('#login-btnn').addEventListener('click', ()=>{
