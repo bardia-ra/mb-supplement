@@ -10,7 +10,9 @@ checkbox.addEventListener('change',()=>{
         document.querySelector('#sidebar').style.background="#212529";
         // document.querySelector('.belt-menu').style.background="#212529";
         document.querySelector('.sup-menu').style.background="#212529";
+        document.querySelector('.side-sup-menu').style.background="#212529";
         document.querySelector('.layout-menu').style.background="#212529";
+        document.querySelector('.side-layout-menu').style.background="#212529";
         document.querySelector('.nav').style.background="#212529";
         document.querySelector('.login-container').style.background="#212529";
         document.querySelector('.cart-container').style.background="#212529";
@@ -29,7 +31,9 @@ checkbox.addEventListener('change',()=>{
         document.querySelector('#sidebar').style.background="#fff";
         // document.querySelector('.belt-menu').style.background="#fff";
         document.querySelector('.sup-menu').style.background="#fff";
+        document.querySelector('.side-sup-menu').style.background="#fff";
         document.querySelector('.layout-menu').style.background="#fff";
+        document.querySelector('.side-layout-menu').style.background="#fff";
         document.querySelector('.nav').style.background="#fff";
         document.querySelector('.login-container').style.background="#fff";
         document.querySelector('.cart-container').style.background="#fff";
@@ -77,12 +81,48 @@ document.querySelector('#horizontal').addEventListener('click',()=>{
     // document.querySelector('#horizontal').style.color="#fff";
     document.querySelector('#vertical').style.background="transparent";
     // document.querySelector('#vertical').style.color="#000";
+    document.querySelector('#side-horizontal').style.background="#ff7424e2";
+    document.querySelector('#side-vertical').style.background="transparent";
+    document.querySelector('.inner-nav').classList.add('unactive');
+    document.querySelector('.side-nav').classList.add('active');
+    document.querySelector('.main').classList.add('width');
+    document.querySelector('.iran').classList.add('side');
+    document.querySelector('.login').classList.add('side');
 });
 document.querySelector('#vertical').addEventListener('click',()=>{
     document.querySelector('#vertical').style.background="#ff7424e2";
     // document.querySelector('#horizontal').style.color="#fff";
     document.querySelector('#horizontal').style.background="transparent";
     // document.querySelector('#vertical').style.color="#000";
+    
+});
+document.querySelector('#side-horizontal').addEventListener('click',()=>{
+    document.querySelector('#side-horizontal').style.background="transparent";
+    // document.querySelector('#horizontal').style.color="#fff";
+    document.querySelector('#side-vertical').style.background="#ff7424e2";
+    // document.querySelector('#vertical').style.color="#000";
+    
+});
+document.querySelector('#side-vertical').addEventListener('click',()=>{
+    document.querySelector('#side-vertical').style.background="transparent";
+    // document.querySelector('#horizontal').style.color="#fff";
+    document.querySelector('#side-horizontal').style.background="#ff7424e2";
+    // document.querySelector('#vertical').style.color="#000";
+    document.querySelector('#vertical').style.background="#ff7424e2";
+    document.querySelector('#horizontal').style.background="transparent";
+    document.querySelector('.inner-nav').classList.remove('unactive');
+    document.querySelector('.side-nav').classList.remove('active');
+    document.querySelector('.main').classList.remove('width');
+    document.querySelector('.iran').classList.remove('side');
+    document.querySelector('.login').classList.remove('side');
+});
+document.querySelector('#side-nav-lay').addEventListener('click',()=>{
+    document.querySelector('.side-layout-menu').classList.toggle('active');
+    document.querySelector('.side-sup-menu').classList.remove('active');
+});
+document.querySelector('#side-nav-sup').addEventListener('click',()=>{
+    document.querySelector('.side-sup-menu').classList.toggle('active');
+    document.querySelector('.side-layout-menu').classList.remove('active');
 });
 document.querySelector('.bar-parent').addEventListener('click',()=>{
     document.querySelector('#sidebar').classList.toggle('active');
@@ -235,9 +275,15 @@ hidepass.addEventListener('click',()=>{
 // console.log(userexist(username));
 // // console.log(loginform);
 AOS.init({
-  duration: 500,
-  easing: "ease-in-sine",
-});
+    duration: 500,
+    easing: "ease-in-sine",
+  });
+// document.addEventListener('DOMContentLoaded', () => {
+//     if (window.innerWidth >= 992) { // Adjust the width as needed for your mobile breakpoint
+//         const fade = document.getElementById('fade'); // Replace with your element's ID
+//         fade.setAttribute('data-aos', 'fade-left');
+//     }
+// });
 
 let swiperCard = new Swiper(".card-content", {
     loop: true,
