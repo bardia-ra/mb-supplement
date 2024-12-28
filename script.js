@@ -1,11 +1,54 @@
 const html=document.getElementById('htmltag');
 const checkbox=document.getElementById('checkbox');
+const sidecheckbox=document.getElementById('side-checkbox');
 // var root = document.querySelector(':root');
 // var rootstyle = getComputedStyle(root);
 // var mode = rootstyle.getPropertyValue('--orange-color');
 // document.querySelector(':root').style.setProperty('--orange-color', '#212529');
 checkbox.addEventListener('change',()=>{
     if(checkbox.checked){
+        html.setAttribute("data-bs-theme","dark");
+        document.querySelector('#sidebar').style.background="#212529";
+        // document.querySelector('.belt-menu').style.background="#212529";
+        document.querySelector('.sup-menu').style.background="#212529";
+        document.querySelector('.side-sup-menu').style.background="#212529";
+        document.querySelector('.layout-menu').style.background="#212529";
+        document.querySelector('.side-layout-menu').style.background="#212529";
+        document.querySelector('.nav').style.background="#212529";
+        document.querySelector('.login-container').style.background="#212529";
+        document.querySelector('.cart-container').style.background="#212529";
+        document.querySelector('#card-1').style.background="#212529";
+        document.querySelector('#card-2').style.background="#212529";
+        document.querySelector('#card-3').style.background="#212529";
+        document.querySelector('#card-4').style.background="#212529";
+        document.querySelector('#card-5').style.background="#212529";
+        // document.querySelector('.card-bottom').classList.add('active');
+        document.querySelector('.card-button').style.background="#212529";
+        // document.documentElement.style.setProperty('--orange-color', '#ff0000');
+        // document.querySelector(':root').style.setProperty('--orange-color', '#212529');
+        // document.querySelector('.button-48:before').style.background="#212529";
+    }else{
+        html.setAttribute("data-bs-theme","light");
+        document.querySelector('#sidebar').style.background="#fff";
+        // document.querySelector('.belt-menu').style.background="#fff";
+        document.querySelector('.sup-menu').style.background="#fff";
+        document.querySelector('.side-sup-menu').style.background="#fff";
+        document.querySelector('.layout-menu').style.background="#fff";
+        document.querySelector('.side-layout-menu').style.background="#fff";
+        document.querySelector('.nav').style.background="#fff";
+        document.querySelector('.login-container').style.background="#fff";
+        document.querySelector('.cart-container').style.background="#fff";
+        document.querySelector('#card-1').style.background="#fff";
+        document.querySelector('#card-2').style.background="#fff";
+        document.querySelector('#card-3').style.background="#fff";
+        document.querySelector('#card-4').style.background="#fff";
+        document.querySelector('#card-5').style.background="#fff";
+        // document.querySelector('.card-bottom').classList.remove('active');
+        document.querySelector('.card-button').style.background="#fff";
+    }
+});
+sidecheckbox.addEventListener('change',()=>{
+    if(sidecheckbox.checked){
         html.setAttribute("data-bs-theme","dark");
         document.querySelector('#sidebar').style.background="#212529";
         // document.querySelector('.belt-menu').style.background="#212529";
@@ -228,57 +271,13 @@ hidepass.addEventListener('click',()=>{
         passinput.setAttribute('type','password');
     }
 });
-const bardia=addEventListener('DOMContentLoaded',()=>{
+const loader=addEventListener('DOMContentLoaded',()=>{
     let load=document.querySelector('.blank');
     load.style.display="none";
 
 });
 
-// const users=[
-//     { username:'bardia',password:'bardia'},
-//     { username:'artin',password:'artin'},
-// ];
 
-// // export default users;
-
-// const userexist=(username='')=>{
-//     let userexist = false;
-
-//     users.forEach(user => {
-//         if(user.username==username){
-//             userexist = true;
-//             return;
-//         }
-//     });
-
-//     return userexist;
-// };
-
-// const passexist=(username='',password='')=>{
-//     let passexist = false;
-
-//     users.forEach(user => {
-//         if(user.password==password && user.username==username){
-//             passexist = true;
-//             return;
-//         }
-//     });
-
-//     return passexist;
-// }
-
-// loginform.addEventListener('submit', (e)=>{
-//     e.preventDefault();
-//     const element=e.target.element;
-//     const [username,password]=[
-//         element.namedItem('username').value || "",
-//         element.namedItem('password').value || "",
-//     ];
-
-    
-// });
-// console.log(userexist(username));
-// // console.log(loginform);
 AOS.init({
     duration: 500,
     easing: "ease-in-sine",

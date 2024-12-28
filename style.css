@@ -17,6 +17,14 @@
     --orange-color:#ff7424e2;
     --gary-color:#a3a3a3;
 }
+/* body[data-bs-theme="dark"]{
+    background-color: #212529;
+    color: #fff;
+}
+body[data-bs-theme="dark"]{
+    background-color: #ffffff;
+    color: #000000;
+} */
 main{
     width: 100%;
     /* background-color: #000; */
@@ -1538,6 +1546,7 @@ nav{
     display: flex;
     justify-content: center;
     align-items: center;
+    display: none;
 }
 .loaderr {
     color: var(--orange-color);
