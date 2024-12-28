@@ -228,6 +228,11 @@ hidepass.addEventListener('click',()=>{
         passinput.setAttribute('type','password');
     }
 });
+const bardia=addEventListener('DOMContentLoaded',()=>{
+    let load=document.querySelector('.blank');
+    load.style.display="none";
+
+});
 
 // const users=[
 //     { username:'bardia',password:'bardia'},
